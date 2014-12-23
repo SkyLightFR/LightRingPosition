@@ -30,7 +30,7 @@ public class LightRingPosition {
 		PlateauJeu Plateau = new PlateauJeu(20);
 		JFrame frame = new JFrame();
 		frame.add(Plateau.getMenu());
-		frame.setMinimumSize(new Dimension(Plateau.getPlateau().getLargeur()*30+30,Plateau.getPrint().getSize().height+Plateau.getInfo().getSize().height+75));
+		frame.setMinimumSize(new Dimension(Plateau.getPlateau().getLargeur()*30+10,Plateau.getPrint().getSize().height+Plateau.getInfo().getSize().height+10));
 		frame.setTitle("Light Ring Position - Created by SkyLight");
 		frame.pack();
 		frame.setVisible(true);
