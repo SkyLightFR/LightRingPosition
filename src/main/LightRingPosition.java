@@ -16,7 +16,7 @@ import Plateau.PlateauJeu;
 public class LightRingPosition {
 	/*
 	 * Author : Benjamin Chevalier
-	 * Version : 1.3
+	 * Version : 1.3.4
 	 * Name : Light Ring Position
 	 */
 	private int tour;
