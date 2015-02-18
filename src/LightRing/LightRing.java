@@ -9,11 +9,8 @@ import Constante.Constante;
 public class LightRing extends JPanel {
 
 	private int[][] plateau;
-	private int hauteur;
-	private int largeur;
-	private Joueur J1;
-	private Joueur J2;
-	private Joueur joueur;
+	private int hauteur, largeur;
+	private Joueur J1, J2, joueur;
 	private int tour = 30;
 
 	private JFrame frame = new JFrame();
@@ -118,7 +115,7 @@ public class LightRing extends JPanel {
 			getJoueur().setPosY(coordY);
 			getPlateau()[getJoueur().getPosY()][getJoueur().getPosX()] = Constante.J1;
 			return true;
-		} else {
+		} else {	
 			getPlateau()[lambda.getPosY()][lambda.getPosX()] = Constante.CASE_J2;
 			getJoueur().setPosX(coordX);
 			getJoueur().setPosY(coordY);
