@@ -128,7 +128,7 @@ public class Print extends JPanel {
 					}
 					if(plateau.getTour() == 0 ) {
 						if(Information.getBouleJ1() > Information.getBouleJ2()) {
-							JOptionPane.showMessageDialog(frame, "Le joueur 1 gagne.", "Vainqueur : Joueur 1",JOptionPane.INFORMATION_MESSAGE);
+							JOptionPane.showMessageDialog(frame, "Le joueur 1 gagne	.", "Vainqueur : Joueur 1",JOptionPane.INFORMATION_MESSAGE);
 						} else if (Information.getBouleJ1() < Information.getBouleJ2()) {
 							JOptionPane.showMessageDialog(frame, "Le joueur 2 gagne.", "Vainqueur : Joueur 2",JOptionPane.INFORMATION_MESSAGE);
 						} else if (Information.getBouleJ1() == Information.getBouleJ2()) {
@@ -142,14 +142,11 @@ public class Print extends JPanel {
 			public void mouseEntered(MouseEvent arg0) {
 			}
 
-
 			public void mouseExited(MouseEvent arg0) {
 			}
 
-
 			public void mouseClicked(MouseEvent arg0) {
 			}
-
 
 			public void mousePressed(MouseEvent arg0) {
 			}
@@ -179,7 +176,6 @@ public class Print extends JPanel {
 		BufferedImage J1 = null;
 		BufferedImage J2 = null;
 		BufferedImage vide = null;
-
 
 		try {
 			caseJ1 = ImageIO.read(this.getClass().getClassLoader().getResourceAsStream("fireball.png"));
@@ -240,7 +236,6 @@ public class Print extends JPanel {
 
 	public void reinitialiserVecteur()  {
 		for(Vecteur v : list) {
-
 			if(v.equals(Constante.HAUT)) {
 				v.reinitialiserX(0);
 				v.reinitialiserY(-1);
